@@ -1,0 +1,28 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -    
+        var myTitle = "learn JavaScript Operators";
+        var myDescription = "You can use JavaScript to solve all of your Math problems!";
+        var landingPage = "JavaScript";
+        var activeLink = "/javascript/operators";
+
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    table(width="100%")
+        tr
+            th operator
+            th description
+        tr
+            td(bgcolor="grey",width="20%") +
+            td(width="20%") plus sign
+        tr
+            td(width="20%") -
+            td(bgcolor="grey",width="20%") minus sign
+        tr
+            td(bgcolor="grey",width="20%") *
+            td(width="20%") multiplication sign
+        tr
+            td(width="20%") /
+            td(bgcolor="grey",width="20%") division sign

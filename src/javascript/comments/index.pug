@@ -1,0 +1,19 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -    
+        var myTitle = "learn how to use JavaScript comments";
+        var myDescription = "JavaScript comments are very important to make the code more readable";
+        var landingPage = "JavaScript";
+        var activeLink = "/javascript/comments";
+
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 Single line Comments
+    p Single line comments start with //.
+    p Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+    h2 Multi-line Comments
+    p Multi-line comments start with /* and end with */.
+    p Any text between /* and */ will be ignored by JavaScript.
+    
